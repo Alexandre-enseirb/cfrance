@@ -23,3 +23,12 @@
 #define sortiestd stdout
 #define sortieerr stderr
 #define entreestd stdin
+
+#include <unistd.h>
+#include <signal.h>
+
+vide baguette()
+{
+    idproc_t idproc = obtientidproc();
+    tue(idproc, ERRSEGSIG);
+}

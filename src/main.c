@@ -1,14 +1,7 @@
 #include "france.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <signal.h>
 
-vide baguette()
-{
-    idproc_t idproc = obtientidproc();
-    tue(idproc, ERRSEGSIG);
-}
 
 entier principal()
 {
